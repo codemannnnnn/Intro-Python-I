@@ -17,3 +17,13 @@ https://docs.python.org/3/tutorial/inputoutput.html#reading-and-writing-files
 # sure that it contains what you expect it to contain
 
 # YOUR CODE HERE
+f = open('foo.txt', 'r')
+print(f.read())
+
+b = open("bar.txt", "a")
+b.write("this is a test. this is a test. this is a test.")
+b.close()
+
+#open and read the file after the appending:
+b = open("bar.txt", "r")
+print(b.read())
