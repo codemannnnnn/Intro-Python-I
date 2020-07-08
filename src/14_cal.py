@@ -41,7 +41,7 @@ yy = int(str(date.year)[-2:])
 
 def cal(mm = mm, yy = yy):
 
-  return calendar.month(yy, mm)
+  return calendar.month(yy, mm, 10)
 
 try:
   if len(args) == 0:
@@ -51,6 +51,6 @@ try:
   elif len(args) == 2:
     print(cal(int(args[0]), int(args[1])))
   else:
-    print("Prints current month. Options: month [mm] and year [yy]")
+    print("Options: month [mm] and year [yy]")
 except (ValueError, IndexError):
   print("Please correct the format of your input - Options: month [mm] and year [yy]")
